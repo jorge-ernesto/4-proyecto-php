@@ -9,7 +9,7 @@ if(isset($_POST)){
 	$apellidos = isset($_POST['apellidos']) ? mysqli_real_escape_string($db, $_POST['apellidos']) : false;
 	$email = isset($_POST['email']) ? mysqli_real_escape_string($db, trim($_POST['email'])) : false;
 
-	// Array de errores
+	// Validacion
 	$errores = array();
 	
 	// Validar los datos antes de guardarlos en la base de datos

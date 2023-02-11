@@ -5,7 +5,7 @@ if(isset($_POST)){
 	
 	$nombre = isset($_POST['nombre']) ? mysqli_real_escape_string($db, $_POST['nombre']) : false;
 	
-	// Array de errores
+	// Validacion
 	$errores = array();
 	
 	// Validar los datos antes de guardarlos en la base de datos
